@@ -1,11 +1,9 @@
 import networkx as nx
 import heapq
 
-
 def parallel_dijkstra(g, k, z):
 
     nbors = type_ident(g, z)
-
     nx.set_node_attributes(g, 'Dv', 1000)
     nx.set_node_attributes(g, 'V', 'N')
     nx.set_node_attributes(g, 'visit', 0)
